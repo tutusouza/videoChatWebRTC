@@ -1,0 +1,104 @@
+body{
+    font-family: monospace;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container h2{
+    text-align: center;
+}
+.containerIdAmigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-campos-conexao{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+.content-campos-conexao input{
+    padding: 5px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.content-campos-conexao button{
+    padding: 6px 10px;
+    background-color: #41b9ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.content-video {
+    width: calc(100vw - 200px);
+    min-height: 300px;
+    background-color: #ececec;
+    position: relative;
+    max-width: 450px;
+}
+.container-opcoes-envia-mensagem{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+#enviaMensagem{
+    min-width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+    min-height: 74px;
+    max-height: 74px;
+}
+
+.btns-enviar-mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+}
+.btns-enviar-mensagem button {
+    background: none;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btns-enviar-mensagem button:hover {
+    transition: .3s;
+    background-color: #41b9ff;
+    color:#fff;
+}
+
+.container-mensagens{
+    display: flex;
+    flex-direction: column;
+    height: 219px;
+    overflow-y: auto;
+}
+.container-mensagens div div{
+    display: flex;
+}
+.container-mensagens span{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.meunsagem-div-eu{
+    justify-content: flex-end;
+}
+.meunsagem-div-eu span{
+    background-color: aquamarine;
+}
+.meunsagem-div-ele{
+    justify-content: flex-start;
+}
+.meunsagem-div-ele span{
+    background-color: aqua;
+}

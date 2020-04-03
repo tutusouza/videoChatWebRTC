@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatWebRTC</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main-container">
+        <div>
+            <h2 id="siteTitle" >Testando Chat WebRTC</h2>
+            <div id="containerIdAmigo" class="containerIdAmigo">
+                <label for="id_amigo">Digite o id do parceiro</label>
+                <div class="content-campos-conexao">
+                    <input id="id_amigo" type="text" placeholder="Id do parceiro">
+                    <button id="btn-conectar" onclick="conectar()" >Conectar</button>
+                </div>
+            </div>
+            <video width="100%" height="100%" id="meuVideo" controls autoplay></video>
+            <div class="content-video" id="content-video" style="visibility: visible;">
+                <div class="container-mensagens" id="container-mensagens">
+                </div>
+                
+                <div class="container-opcoes-envia-mensagem">
+                    <textarea onkeypress="enter();" placeholder="Digite sua mensagem aqui" id="enviaMensagem" ></textarea>
+                    <div class="btns-enviar-mensagem">
+                        <button onclick="enviarMensagem()">Enviar</button>
+                        <button onclick="chamadaVideo()">Cam</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+<script src="index.js"></script>
+</html>
